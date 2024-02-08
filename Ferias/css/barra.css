@@ -1,0 +1,74 @@
+@import url('hHtps://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,900&display=swap');
+
+* {
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+#barra__de__navegacao {
+    width: 100%;
+    height: 70px;
+    background-color: rgb(23, 34, 109);
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 12.5px;
+}
+
+#barra__de__navegacao ul {
+    list-style: none;
+}
+
+#barra__de__navegacao img {
+    height: 80px;
+}
+
+#barra__de__navegacao ul li {
+    font-weight: bold;
+    transition: .2s;
+    display: inline-flex;
+    background-color: rgb(255, 43, 43);
+    width: 100px;
+    color: azure;
+    align-items: center;
+    height: 40px;
+    justify-content: center;
+    border-radius: 5px;
+}
+
+#barra__de__navegacao a {
+    color: black;
+}
+
+
+#barra__de__navegacao ul li:hover {
+    scale: 1.2;
+    background-color: azure;
+    margin-right: 10px;
+    color: rgb(255, 43, 43);
+    margin-left: 10px;
+}
+
+body {
+    background-color: rgb(131, 172, 255);
+}
+
+#conteudo {
+    position: absolute;
+    left: 50%;
+    background-color: rgb(186, 208, 253);
+    transform: translateX(-50%);
+    width: 90%;
+    max-width: 1024px;
+    height: calc(100vh - 70px);
+    padding: 25px;
+}
+
+#conteudo div {
+    padding: 15px;
+    margin-top: 10px;
+    background-color: azure;
+    border: 3px solid;
+    border-radius: 5px;
+}
