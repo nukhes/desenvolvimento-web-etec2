@@ -12,16 +12,21 @@
     background-color: rgb(23, 34, 109);
     display:flex;
     align-items: center;
-    justify-content: center;
     padding-top: 12.5px;
+    justify-content: flex-end;
+    padding-right: 30px;
 }
 
 #barra__de__navegacao ul {
     list-style: none;
 }
 
-#barra__de__navegacao img {
-    height: 80px;
+#barra__de__navegacao span {
+    position: absolute;
+    left: 30px;
+    color: azure;
+    font-size: 22pt;
+    font-weight: bolder;
 }
 
 #barra__de__navegacao ul li {
@@ -65,7 +70,7 @@ body {
     padding: 25px;
 }
 
-#conteudo div {
+#conteudo .caixa {
     padding: 15px;
     margin-top: 10px;
     background-color: azure;
