@@ -1,10 +1,21 @@
 @import url('hHtps://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
 
+/* reset */
 * {
     font-family: 'Lato', sans-serif;
     margin: 0;
     padding: 0;
 }
+
+/* classe para fonte mono */
+.mono {
+  font-family: "Roboto Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+
 
 #barra__de__navegacao {
     width: 100%;
@@ -17,10 +28,12 @@
     padding-right: 30px;
 }
 
+/* a lista de botoes para a barra */
 #barra__de__navegacao ul {
     list-style: none;
 }
 
+/* logo */
 #barra__de__navegacao span {
     position: absolute;
     left: 30px;
@@ -29,6 +42,7 @@
     font-weight: bolder;
 }
 
+/* os botoes de navegaçao */
 #barra__de__navegacao ul li {
     font-weight: bold;
     transition: .2s;
@@ -42,11 +56,13 @@
     border-radius: 5px;
 }
 
+/* links dos botoes */
 #barra__de__navegacao a {
     color: black;
+    text-decoration: none;
 }
 
-
+/* efeito especial 4k */
 #barra__de__navegacao ul li:hover {
     scale: 1.2;
     background-color: azure;
@@ -56,24 +72,33 @@
 }
 
 body {
-    background-color: rgb(90, 90, 200);
+    background-color: rgb(240, 240, 240);
 }
 
+/* aq eu coloco o conteudo das paginas */
 #conteudo {
     position: absolute;
     left: 50%;
-    background-color: rgb(186, 208, 253);
+    background-color: rgb(209, 209, 209);
     transform: translateX(-50%);
     width: 90%;
     max-width: 1024px;
     height: calc(100vh - 70px);
     padding: 25px;
+    box-shadow: 0 0 90px rgba(14, 0, 57, 0.365);
 }
 
-#conteudo .caixa {
+.caixa {
     padding: 15px;
     margin-top: 10px;
-    background-color: azure;
-    border: 3px solid;
-    border-radius: 5px;
+    background-color: rgb(255, 255, 255);
+    border: 3px solid rgba(48, 8, 168, 0.663);
+    border-radius: 10px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.201);
+}
+
+/* caixa de conteudo generica */
+.caixa a {
+    color: rgba(48, 8, 168, 0.663);
+    font-style: italic;
 }
