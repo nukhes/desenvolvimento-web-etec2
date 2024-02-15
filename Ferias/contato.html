@@ -7,6 +7,30 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 
     <link rel="stylesheet" href="css/geral.css">
+
+    <style>
+        #contatos {
+            list-style: none;
+            font-weight: 400;
+        }
+
+        #contatos .fa-brands, .fa-solid {
+            font-size: 40px;
+            background-color: rgb(238, 88, 178);
+            padding: 7px;
+            margin: 5px 10px 5px 0;
+            border-radius: 10px;
+            color: white;
+        } 
+
+        #contatos li {
+            display: flex;
+            align-items: center;
+            align-content: center;
+            
+        }
+    </style>
+
 </head>
 <body>
     
@@ -18,8 +42,20 @@
         </ul>
     </header>
 
-    Contatos
+    <div id="conteudo">
+        <div class="caixa">
+            <h1><a class="mono" href="#">Contatos</a></h1>
+
+            <ul id="contatos">
+                <li class="mono"><i class="fa-brands fa-instagram"></i>@instagram</li>
+                <li class="mono"><i class="fa-brands fa-whatsapp" style="background-color: rgb(19, 166, 19);"></i>(16)12345-6077</li>
+                <li class="mono"><i class="fa-solid fa-envelope" style="font-size: 35px; background-color: rgb(218, 51, 51);"></i></i>pedroerafa24@etec.com</li>
+            </ul>
+
+        </div>
+    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/1abf4eb26a.js" crossorigin="anonymous"></script>
 </body>
 </html>
